@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Web.HttpAggregator.Config;
-using Web.HttpAggregator.Repositories;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Web.HttpAggregator
+namespace IdentityAPI
 {
     public class Startup
     {
@@ -21,16 +25,8 @@ namespace Web.HttpAggregator
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
-
-            // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen();
-
-            services.Configure<ServiceConfig>(Configuration.GetSection("Services"));
-
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddTransient<IIdentityRepository, IdentityRepository>();
-            services.AddTransient<IRestaurantRepository, RestaurantRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,17 +38,6 @@ namespace Web.HttpAggregator
             }
 
             app.UseHttpsRedirection();
-
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPI Gateway V1");
-                c.RoutePrefix = string.Empty;
-            });
 
             app.UseRouting();
 

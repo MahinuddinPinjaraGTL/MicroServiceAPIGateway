@@ -13,15 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderAPI", "OrderAPI\OrderA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{53C0A609-08F1-4570-A783-A605DC15B41E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.HttpAggregator", "Web.HttpAggregator\Web.HttpAggregator.csproj", "{97D29971-5FDF-4EA6-B82E-3BE946A96361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.HttpAggregator", "Web.HttpAggregator\Web.HttpAggregator.csproj", "{97D29971-5FDF-4EA6-B82E-3BE946A96361}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{1A763727-3005-48C6-BE98-805D94EE0F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonObjects", "CommonObjects\CommonObjects.csproj", "{0D128ABA-0F3A-409C-94F7-1B8ADB09EBF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonObjects", "CommonObjects\CommonObjects.csproj", "{0D128ABA-0F3A-409C-94F7-1B8ADB09EBF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderEntities", "OrderEntities\OrderEntities.csproj", "{0BDDC5A3-4191-4615-B708-FE7370A646A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderEntities", "OrderEntities\OrderEntities.csproj", "{0BDDC5A3-4191-4615-B708-FE7370A646A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantEntities", "RestaurantEntities\RestaurantEntities.csproj", "{25095AE2-8EFC-47A6-8003-9EA6DB38D578}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantEntities", "RestaurantEntities\RestaurantEntities.csproj", "{25095AE2-8EFC-47A6-8003-9EA6DB38D578}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthService", "AuthService", "{D7B0DE5E-55BF-468D-A3CE-505D2D7F6AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityAPI", "IdentityAPI\IdentityAPI.csproj", "{8CEFB27B-2F1A-455E-92CB-E895CB5F650D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{25095AE2-8EFC-47A6-8003-9EA6DB38D578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25095AE2-8EFC-47A6-8003-9EA6DB38D578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25095AE2-8EFC-47A6-8003-9EA6DB38D578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CEFB27B-2F1A-455E-92CB-E895CB5F650D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CEFB27B-2F1A-455E-92CB-E895CB5F650D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CEFB27B-2F1A-455E-92CB-E895CB5F650D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CEFB27B-2F1A-455E-92CB-E895CB5F650D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{0D128ABA-0F3A-409C-94F7-1B8ADB09EBF0} = {1A763727-3005-48C6-BE98-805D94EE0F02}
 		{0BDDC5A3-4191-4615-B708-FE7370A646A7} = {04D945B1-59E9-43D8-BA3C-64828544BE97}
 		{25095AE2-8EFC-47A6-8003-9EA6DB38D578} = {33F669DD-F2C1-4E28-8BD5-3CEA4EE4B749}
+		{8CEFB27B-2F1A-455E-92CB-E895CB5F650D} = {D7B0DE5E-55BF-468D-A3CE-505D2D7F6AF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D61592C-CBE5-4AD3-8759-F5C235B3D99A}
